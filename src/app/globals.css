@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --background: #ffffff;
+  --dark: #131313;
+  --light-background: #F9F5FD;
+  --dark-background: #080808;
+  --dark-accent: #0a3da1;
+  --accent1: #4481fa;
+  --accent2: #98bbff;
+  --accent3: #e2ebff;
+  --grey1: #3E4551;
+  --border: #CFCFD4;
+  --foreground: #222222;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.animated-gradient {
+  background: linear-gradient(230deg, #360768, #7a39ef, #8451c3, #2d065c, #c575ff);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  -o-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%
+  }
+
+  50% {
+    background-position: 72% 100%
+  }
+
+  100% {
+    background-position: 29% 0%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%
+  }
+
+  50% {
+    background-position: 72% 100%
+  }
+
+  100% {
+    background-position: 29% 0%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%
+  }
+
+  50% {
+    background-position: 72% 100%
+  }
+
+  100% {
+    background-position: 29% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 29% 0%
+  }
+
+  50% {
+    background-position: 72% 100%
+  }
+
+  100% {
+    background-position: 29% 0%
+  }
+}
+
+.loader {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
