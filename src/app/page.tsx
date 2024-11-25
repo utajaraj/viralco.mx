@@ -62,9 +62,9 @@ export default function Home() {
   return (
     <div className="login-background flex items-center justify-center">
       <div className="login-form w-[320px]">
-        <h1 className="login-title inter-font text-white">Welcome</h1>
+        <h1 className="login-title inter-font">Welcome</h1>
         <div className="input-container flex flex-col">
-          <label htmlFor="username" className="text-white">
+          <label htmlFor="username">
             User
             {
               feedback.length > 0
@@ -75,7 +75,7 @@ export default function Home() {
           <input defaultValue="e@mail.com" id="username" ref={emailRef} onKeyDown={checkSubmit} onChange={validate} />
         </div>
         <div className="input-container flex flex-col">
-          <label htmlFor="passwords" className="text-white">Password</label>
+          <label htmlFor="passwords">Password</label>
           <input type="password" defaultValue={"unsafe"} id="password" ref={passwordRef} onKeyDown={checkSubmit} onChange={validate} />
         </div>
         <div className="login-button">
