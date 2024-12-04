@@ -1,4 +1,4 @@
 export class Credentials {
-    protected system_username: string = "e@mail.com"
-    protected system_password: string = "unsafe"
+    protected system_username: string = "admin@aliado.com.mx"
+    protected system_password: string = "admin#CAUJ8297$j"
 }
